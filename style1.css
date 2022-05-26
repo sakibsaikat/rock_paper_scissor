@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+center h1{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    padding: 30px;
+}
+#result{
+    color:white;
+}
+
+center h1 span:nth-child(1){
+    color: crimson;
+}
+center h1 span:nth-child(2){
+    color: rgb(167, 220, 20);
+}
+center h1 span:nth-child(3){
+    color: rgb(20, 157, 220);
+}
+
+center h4{
+    animation-name: animation1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes animation1 {
+    0%   {transform: scale(1.1); color: crimson;}
+    25%  {transform: scale(1.2); color: yellow;}
+    50%  {transform: scale(1.1); color: rgb(167, 220, 20);}
+    100% {transform: scale(1); color: rgb(20, 157, 220);}
+  }
+
+
+center h4{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    display: none;
+}
+.box{
+    margin: 10px 40px;
+    border: 1px solid rgb(160, 155, 155);
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.box:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 4px 10px rgb(218, 213, 213);
+}
+
+
+.output_window{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(61, 58, 58);
+    
+}
+.output_window_main{
+    width: 60%;
+    height: 450px;
+    margin: 50px auto;
+    border: 1px solid rgb(160, 155, 155);
+    background-color: rgb(61, 58, 58);
+    padding-right: 20px;
+    display:none;
+    animation-name: animation2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    
+}
+
+@keyframes animation2 {
+    0%   {transform: translateX(50px); box-shadow: 3px 3px 8px crimson;}
+    25%  {transform: translateX(10px); box-shadow: 3px 3px 8px yellow;}
+    50%  {transform: translateX(50px); box-shadow: 3px 3px 8px rgb(167, 220, 20);}
+    100% {transform: translateX(10px); box-shadow: 3px 3px 8px rgb(20, 157, 220);}
+  }
+
+.turn{
+    width: 50%;
+    margin-right: 20px;
+    padding: 50px;
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+
+.t1{
+    background-color: rgb(243, 113, 7);
+    color: rgb(32, 30, 30);
+}
+.t2{
+    background-color: rgb(36, 34, 35);
+    color:white;
+}
+
+.btns{
+    width: 43%;
+    margin: 0px auto;
+    padding-bottom: 40px;
+}
+.btns button{
+    padding: 20px 30px;
+    outline: none;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+    font-family: 'Lobster', cursive;
+    color:rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.btns button:nth-child(1){
+    background-color: rgb(9, 188, 243);
+
+}
+.btns button:nth-child(2){
+    background-color: rgb(153, 243, 9);
+
+}
+.btns button:nth-child(1):hover{
+   transform: scale(1.1);
+   color:white;
+
+}
+.btns button:nth-child(2):hover{
+    transform: scale(1.1);
+    color:white;
+
+}
+
+
